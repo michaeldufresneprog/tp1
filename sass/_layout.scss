@@ -1,0 +1,48 @@
+/*---------css global----------*/
+body{
+    width: 100vw;
+    min-height: 100vh;
+}
+header,nav,main,footer{
+    width: 100vw;
+    display: flex;
+}
+header{
+    background-color: $couleur_rouge;
+}
+.header-block{
+    display: none;
+}
+.ul-opacity{
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.body-hidden{
+    overflow: hidden;
+}
+.nav-height{
+    height: 100vh;
+}
+main section:first-child,header section{
+    margin:0 2vw;
+}
+nav{
+    background-color: darken($couleur_noire, 10%);
+}
+main{
+    background-color: lighten($couleur_rouge,20%);
+}
+footer{
+    background-color: $couleur_rouge;
+}
+.global{
+    width: 95%;
+}
+/*---------MEDIA QUERIES----------*/
+@media screen and (min-width: 600px)
+{
+    .global{
+        width: 85%;
+    }
+}
